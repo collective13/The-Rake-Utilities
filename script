@@ -1,0 +1,965 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("ImageLabel")
+local title = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local bringscrap = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextButton_2 = Instance.new("TextButton")
+local counter = Instance.new("TextLabel")
+local bringflare = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local TextButton_3 = Instance.new("TextButton")
+local counter_2 = Instance.new("TextLabel")
+local infstamina = Instance.new("TextLabel")
+local TextLabel_7 = Instance.new("TextLabel")
+local TextButton_4 = Instance.new("TextButton")
+local fullbright = Instance.new("TextLabel")
+local TextLabel_8 = Instance.new("TextLabel")
+local TextButton_5 = Instance.new("TextButton")
+local door = Instance.new("TextLabel")
+local TextLabel_9 = Instance.new("TextLabel")
+local TextButton_6 = Instance.new("TextButton")
+local _2title = Instance.new("TextLabel")
+local resp = Instance.new("TextButton")
+local TextLabel_10 = Instance.new("TextLabel")
+local TextLabel_11 = Instance.new("TextLabel")
+local cesp = Instance.new("TextButton")
+local TextLabel_12 = Instance.new("TextLabel")
+local TextLabel_13 = Instance.new("TextLabel")
+local TextLabel_14 = Instance.new("TextLabel")
+local besp = Instance.new("TextButton")
+local TextLabel_15 = Instance.new("TextLabel")
+local TextLabel_16 = Instance.new("TextLabel")
+local shesp = Instance.new("TextButton")
+local TextLabel_17 = Instance.new("TextLabel")
+local TextLabel_18 = Instance.new("TextLabel")
+local psesp = Instance.new("TextButton")
+local TextLabel_19 = Instance.new("TextLabel")
+local TextLabel_20 = Instance.new("TextLabel")
+local otesp = Instance.new("TextButton")
+local TextLabel_21 = Instance.new("TextLabel")
+local TextLabel_22 = Instance.new("TextLabel")
+local sesp = Instance.new("TextButton")
+local TextLabel_23 = Instance.new("TextLabel")
+local TextLabel_24 = Instance.new("TextLabel")
+local credit = Instance.new("TextLabel")
+local credit2 = Instance.new("TextLabel")
+local tip = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+main.BackgroundTransparency = 1.000
+main.Position = UDim2.new(0.356969714, 0, 0.0932515338, 0)
+main.Size = UDim2.new(0, 545, 0, 687)
+main.Image = "rbxassetid://3570695787"
+main.ImageColor3 = Color3.fromRGB(18, 18, 18)
+main.ScaleType = Enum.ScaleType.Slice
+main.SliceCenter = Rect.new(100, 100, 100, 100)
+main.SliceScale = 0.120
+
+title.Name = "title"
+title.Parent = main
+title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title.BackgroundTransparency = 1.000
+title.Size = UDim2.new(0, 545, 0, 40)
+title.Image = "rbxassetid://3570695787"
+title.ImageColor3 = Color3.fromRGB(30, 30, 30)
+title.ScaleType = Enum.ScaleType.Crop
+title.SliceCenter = Rect.new(100, 100, 100, 100)
+title.SliceScale = 0.120
+
+TextLabel.Parent = title
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0183486231, 0, 0.174999997, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 26)
+TextLabel.Font = Enum.Font.GothamSemibold
+TextLabel.Text = "The Rake"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 22.000
+TextLabel.TextWrapped = true
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton.Parent = title
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.Position = UDim2.new(0.90458715, 0, 0, 0)
+TextButton.Size = UDim2.new(0, 61, 0, 40)
+TextButton.Font = Enum.Font.Code
+TextButton.Text = "X"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+bringscrap.Name = "bringscrap"
+bringscrap.Parent = main
+bringscrap.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+bringscrap.BackgroundTransparency = 1.000
+bringscrap.Position = UDim2.new(0.0183486231, 0, 0.0743833333, 0)
+bringscrap.Size = UDim2.new(0, 346, 0, 33)
+bringscrap.Font = Enum.Font.GothamSemibold
+bringscrap.Text = "Bring Scrap"
+bringscrap.TextColor3 = Color3.fromRGB(255, 255, 255)
+bringscrap.TextSize = 22.000
+bringscrap.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_2.Parent = bringscrap
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.0202312134, 0, 0.727272749, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 27)
+TextLabel_2.Font = Enum.Font.GothamSemibold
+TextLabel_2.Text = "WARNING:"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_2.TextSize = 13.000
+TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_3.Parent = bringscrap
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.234104052, 0, 0.727272749, 0)
+TextLabel_3.Size = UDim2.new(0, 200, 0, 27)
+TextLabel_3.Font = Enum.Font.GothamSemibold
+TextLabel_3.Text = "Please collect scrap"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 13.000
+TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_4.Parent = bringscrap
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.598265886, 0, 0.727272749, 0)
+TextLabel_4.Size = UDim2.new(0, 200, 0, 27)
+TextLabel_4.Font = Enum.Font.GothamSemibold
+TextLabel_4.Text = "SLOWLY"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_4.TextSize = 13.000
+TextLabel_4.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_5.Parent = bringscrap
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.760115623, 0, 0.727272749, 0)
+TextLabel_5.Size = UDim2.new(0, 200, 0, 27)
+TextLabel_5.Font = Enum.Font.GothamSemibold
+TextLabel_5.Text = "otherwise, you may die"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 13.000
+TextLabel_5.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton_2.Parent = bringscrap
+TextButton_2.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+TextButton_2.BorderColor3 = Color3.fromRGB(33, 33, 33)
+TextButton_2.Position = UDim2.new(1.24855494, 0, 0.181818187, 0)
+TextButton_2.Size = UDim2.new(0, 92, 0, 45)
+TextButton_2.Font = Enum.Font.GothamSemibold
+TextButton_2.Text = "K"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextSize = 14.000
+
+counter.Name = "counter"
+counter.Parent = bringscrap
+counter.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+counter.BackgroundTransparency = 1.000
+counter.Position = UDim2.new(0.329479754, 0, 0.0909090936, 0)
+counter.Size = UDim2.new(0, 59, 0, 27)
+counter.Font = Enum.Font.Code
+counter.Text = "0"
+counter.TextColor3 = Color3.fromRGB(40, 255, 29)
+counter.TextSize = 26.000
+
+bringflare.Name = "bringflare"
+bringflare.Parent = main
+bringflare.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+bringflare.BackgroundTransparency = 1.000
+bringflare.Position = UDim2.new(0.0183486231, 0, 0.148619145, 0)
+bringflare.Size = UDim2.new(0, 346, 0, 33)
+bringflare.Font = Enum.Font.GothamSemibold
+bringflare.Text = "Bring Flare Gun"
+bringflare.TextColor3 = Color3.fromRGB(255, 255, 255)
+bringflare.TextSize = 22.000
+bringflare.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_6.Parent = bringflare
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(0.0202312134, 0, 0.727272749, 0)
+TextLabel_6.Size = UDim2.new(0, 200, 0, 27)
+TextLabel_6.Font = Enum.Font.GothamSemibold
+TextLabel_6.Text = "Bring the Flare Gun to your location"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextSize = 13.000
+TextLabel_6.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton_3.Parent = bringflare
+TextButton_3.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+TextButton_3.BorderColor3 = Color3.fromRGB(33, 33, 33)
+TextButton_3.Position = UDim2.new(1.24855494, 0, 0.181818187, 0)
+TextButton_3.Size = UDim2.new(0, 92, 0, 45)
+TextButton_3.Font = Enum.Font.GothamSemibold
+TextButton_3.Text = "P"
+TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.TextSize = 14.000
+
+counter_2.Name = "counter"
+counter_2.Parent = bringflare
+counter_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+counter_2.BackgroundTransparency = 1.000
+counter_2.Position = UDim2.new(0.42774564, 0, 0.0909090936, 0)
+counter_2.Size = UDim2.new(0, 59, 0, 27)
+counter_2.Font = Enum.Font.Code
+counter_2.Text = "0"
+counter_2.TextColor3 = Color3.fromRGB(40, 255, 29)
+counter_2.TextSize = 26.000
+
+infstamina.Name = "infstamina"
+infstamina.Parent = main
+infstamina.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+infstamina.BackgroundTransparency = 1.000
+infstamina.Position = UDim2.new(0.0183486231, 0, 0.222854942, 0)
+infstamina.Size = UDim2.new(0, 346, 0, 33)
+infstamina.Font = Enum.Font.GothamSemibold
+infstamina.Text = "Infinite Stamina"
+infstamina.TextColor3 = Color3.fromRGB(255, 255, 255)
+infstamina.TextSize = 22.000
+infstamina.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_7.Parent = infstamina
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.Position = UDim2.new(0.0202312134, 0, 0.727272749, 0)
+TextLabel_7.Size = UDim2.new(0, 200, 0, 27)
+TextLabel_7.Font = Enum.Font.GothamSemibold
+TextLabel_7.Text = "Run and Jump without losing stamina"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextSize = 13.000
+TextLabel_7.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton_4.Parent = infstamina
+TextButton_4.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+TextButton_4.BorderColor3 = Color3.fromRGB(33, 33, 33)
+TextButton_4.Position = UDim2.new(1.24855494, 0, 0.181818187, 0)
+TextButton_4.Size = UDim2.new(0, 92, 0, 45)
+TextButton_4.Font = Enum.Font.GothamSemibold
+TextButton_4.Text = "L"
+TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.TextSize = 14.000
+
+fullbright.Name = "fullbright"
+fullbright.Parent = main
+fullbright.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+fullbright.BackgroundTransparency = 1.000
+fullbright.Position = UDim2.new(0.0183486231, 0, 0.297090739, 0)
+fullbright.Size = UDim2.new(0, 346, 0, 33)
+fullbright.Font = Enum.Font.GothamSemibold
+fullbright.Text = "Fullbright"
+fullbright.TextColor3 = Color3.fromRGB(255, 255, 255)
+fullbright.TextSize = 22.000
+fullbright.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_8.Parent = fullbright
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.Position = UDim2.new(0.0202312134, 0, 0.727272749, 0)
+TextLabel_8.Size = UDim2.new(0, 200, 0, 27)
+TextLabel_8.Font = Enum.Font.GothamSemibold
+TextLabel_8.Text = "Make the map brighter"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextSize = 13.000
+TextLabel_8.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton_5.Parent = fullbright
+TextButton_5.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+TextButton_5.BorderColor3 = Color3.fromRGB(33, 33, 33)
+TextButton_5.Position = UDim2.new(1.24855494, 0, 0.181818187, 0)
+TextButton_5.Size = UDim2.new(0, 92, 0, 45)
+TextButton_5.Font = Enum.Font.GothamSemibold
+TextButton_5.Text = "J"
+TextButton_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_5.TextSize = 14.000
+
+door.Name = "door"
+door.Parent = main
+door.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+door.BackgroundTransparency = 1.000
+door.Position = UDim2.new(0.0183486231, 0, 0.371326536, 0)
+door.Size = UDim2.new(0, 346, 0, 33)
+door.Font = Enum.Font.GothamSemibold
+door.Text = "Open/Close Safehouse Door"
+door.TextColor3 = Color3.fromRGB(255, 255, 255)
+door.TextSize = 22.000
+door.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_9.Parent = door
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.Position = UDim2.new(0.0202312134, 0, 0.727272749, 0)
+TextLabel_9.Size = UDim2.new(0, 200, 0, 27)
+TextLabel_9.Font = Enum.Font.GothamSemibold
+TextLabel_9.Text = "Open or Close the Safehouse Door"
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.TextSize = 13.000
+TextLabel_9.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton_6.Parent = door
+TextButton_6.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+TextButton_6.BorderColor3 = Color3.fromRGB(33, 33, 33)
+TextButton_6.Position = UDim2.new(1.24855494, 0, 0.181818187, 0)
+TextButton_6.Size = UDim2.new(0, 92, 0, 45)
+TextButton_6.Font = Enum.Font.GothamSemibold
+TextButton_6.Text = "H"
+TextButton_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_6.TextSize = 14.000
+
+_2title.Name = "2title"
+_2title.Parent = main
+_2title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_2title.BackgroundTransparency = 1.000
+_2title.Position = UDim2.new(0.0183486231, 0, 0.457207173, 0)
+_2title.Size = UDim2.new(0, 346, 0, 33)
+_2title.Font = Enum.Font.GothamSemibold
+_2title.Text = "Esp Menu"
+_2title.TextColor3 = Color3.fromRGB(255, 255, 255)
+_2title.TextSize = 22.000
+_2title.TextXAlignment = Enum.TextXAlignment.Left
+
+resp.Name = "resp"
+resp.Parent = main
+resp.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+resp.BorderColor3 = Color3.fromRGB(33, 33, 33)
+resp.Position = UDim2.new(0.0513761453, 0, 0.526928663, 0)
+resp.Size = UDim2.new(0, 200, 0, 46)
+resp.Font = Enum.Font.GothamSemibold
+resp.Text = "Rake"
+resp.TextColor3 = Color3.fromRGB(255, 255, 255)
+resp.TextSize = 22.000
+
+TextLabel_10.Parent = resp
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.BackgroundTransparency = 1.000
+TextLabel_10.Position = UDim2.new(0.0299999993, 0, 0.978946209, 0)
+TextLabel_10.Size = UDim2.new(0, 83, 0, 29)
+TextLabel_10.Font = Enum.Font.GothamSemibold
+TextLabel_10.Text = "Red"
+TextLabel_10.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_10.TextSize = 14.000
+TextLabel_10.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_11.Parent = resp
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BackgroundTransparency = 1.000
+TextLabel_11.Position = UDim2.new(0.170000002, 0, 0.978946209, 0)
+TextLabel_11.Size = UDim2.new(0, 83, 0, 29)
+TextLabel_11.Font = Enum.Font.GothamSemibold
+TextLabel_11.Text = "Indicator"
+TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.TextSize = 14.000
+TextLabel_11.TextXAlignment = Enum.TextXAlignment.Left
+
+cesp.Name = "cesp"
+cesp.Parent = main
+cesp.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+cesp.BorderColor3 = Color3.fromRGB(33, 33, 33)
+cesp.Position = UDim2.new(0.583486259, 0, 0.525473058, 0)
+cesp.Size = UDim2.new(0, 200, 0, 46)
+cesp.Font = Enum.Font.GothamSemibold
+cesp.Text = "Crate"
+cesp.TextColor3 = Color3.fromRGB(255, 255, 255)
+cesp.TextSize = 22.000
+
+TextLabel_12.Parent = cesp
+TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.BackgroundTransparency = 1.000
+TextLabel_12.Position = UDim2.new(0.0299999993, 0, 0.978946209, 0)
+TextLabel_12.Size = UDim2.new(0, 83, 0, 29)
+TextLabel_12.Font = Enum.Font.GothamSemibold
+TextLabel_12.Text = "Yellow"
+TextLabel_12.TextColor3 = Color3.fromRGB(255, 255, 0)
+TextLabel_12.TextSize = 14.000
+TextLabel_12.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_13.Parent = cesp
+TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_13.BackgroundTransparency = 1.000
+TextLabel_13.Position = UDim2.new(0.25, 0, 0.978946209, 0)
+TextLabel_13.Size = UDim2.new(0, 83, 0, 29)
+TextLabel_13.Font = Enum.Font.GothamSemibold
+TextLabel_13.Text = "Indicator"
+TextLabel_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_13.TextSize = 14.000
+TextLabel_13.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_14.Parent = cesp
+TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_14.BackgroundTransparency = 1.000
+TextLabel_14.Position = UDim2.new(0.699479759, 0, 0.19960475, 0)
+TextLabel_14.Size = UDim2.new(0, 59, 0, 27)
+TextLabel_14.Font = Enum.Font.Code
+TextLabel_14.Text = "0"
+TextLabel_14.TextColor3 = Color3.fromRGB(40, 255, 29)
+TextLabel_14.TextSize = 26.000
+
+besp.Name = "besp"
+besp.Parent = main
+besp.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+besp.BorderColor3 = Color3.fromRGB(33, 33, 33)
+besp.Position = UDim2.new(0.583486259, 0, 0.649199426, 0)
+besp.Size = UDim2.new(0, 200, 0, 46)
+besp.Font = Enum.Font.GothamSemibold
+besp.Text = "Base Camp"
+besp.TextColor3 = Color3.fromRGB(255, 255, 255)
+besp.TextSize = 22.000
+
+TextLabel_15.Parent = besp
+TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_15.BackgroundTransparency = 1.000
+TextLabel_15.Position = UDim2.new(0.0299999993, 0, 0.978946209, 0)
+TextLabel_15.Size = UDim2.new(0, 83, 0, 29)
+TextLabel_15.Font = Enum.Font.GothamSemibold
+TextLabel_15.Text = "Dark Blue"
+TextLabel_15.TextColor3 = Color3.fromRGB(15, 7, 255)
+TextLabel_15.TextSize = 14.000
+TextLabel_15.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_16.Parent = besp
+TextLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_16.BackgroundTransparency = 1.000
+TextLabel_16.Position = UDim2.new(0.359999985, 0, 0.978946209, 0)
+TextLabel_16.Size = UDim2.new(0, 83, 0, 29)
+TextLabel_16.Font = Enum.Font.GothamSemibold
+TextLabel_16.Text = "Indicator"
+TextLabel_16.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_16.TextSize = 14.000
+TextLabel_16.TextXAlignment = Enum.TextXAlignment.Left
+
+shesp.Name = "shesp"
+shesp.Parent = main
+shesp.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+shesp.BorderColor3 = Color3.fromRGB(33, 33, 33)
+shesp.Position = UDim2.new(0.051376164, 0, 0.649199426, 0)
+shesp.Size = UDim2.new(0, 200, 0, 46)
+shesp.Font = Enum.Font.GothamSemibold
+shesp.Text = "Safehouse"
+shesp.TextColor3 = Color3.fromRGB(255, 255, 255)
+shesp.TextSize = 22.000
+
+TextLabel_17.Parent = shesp
+TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_17.BackgroundTransparency = 1.000
+TextLabel_17.Position = UDim2.new(0.0299999993, 0, 0.978946209, 0)
+TextLabel_17.Size = UDim2.new(0, 83, 0, 29)
+TextLabel_17.Font = Enum.Font.GothamSemibold
+TextLabel_17.Text = "Lime Green"
+TextLabel_17.TextColor3 = Color3.fromRGB(0, 255, 38)
+TextLabel_17.TextSize = 14.000
+TextLabel_17.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_18.Parent = shesp
+TextLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_18.BackgroundTransparency = 1.000
+TextLabel_18.Position = UDim2.new(0.419999987, 0, 0.978946209, 0)
+TextLabel_18.Size = UDim2.new(0, 83, 0, 29)
+TextLabel_18.Font = Enum.Font.GothamSemibold
+TextLabel_18.Text = "Indicator"
+TextLabel_18.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_18.TextSize = 14.000
+TextLabel_18.TextXAlignment = Enum.TextXAlignment.Left
+
+psesp.Name = "psesp"
+psesp.Parent = main
+psesp.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+psesp.BorderColor3 = Color3.fromRGB(33, 33, 33)
+psesp.Position = UDim2.new(0.583486259, 0, 0.770014584, 0)
+psesp.Size = UDim2.new(0, 200, 0, 46)
+psesp.Font = Enum.Font.GothamSemibold
+psesp.Text = "Power Station"
+psesp.TextColor3 = Color3.fromRGB(255, 255, 255)
+psesp.TextSize = 22.000
+
+TextLabel_19.Parent = psesp
+TextLabel_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_19.BackgroundTransparency = 1.000
+TextLabel_19.Position = UDim2.new(0.0299999993, 0, 0.978946209, 0)
+TextLabel_19.Size = UDim2.new(0, 83, 0, 29)
+TextLabel_19.Font = Enum.Font.GothamSemibold
+TextLabel_19.Text = "Blue"
+TextLabel_19.TextColor3 = Color3.fromRGB(10, 255, 255)
+TextLabel_19.TextSize = 14.000
+TextLabel_19.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_20.Parent = psesp
+TextLabel_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_20.BackgroundTransparency = 1.000
+TextLabel_20.Position = UDim2.new(0.204999983, 0, 0.978946209, 0)
+TextLabel_20.Size = UDim2.new(0, 83, 0, 29)
+TextLabel_20.Font = Enum.Font.GothamSemibold
+TextLabel_20.Text = "Indicator"
+TextLabel_20.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_20.TextSize = 14.000
+TextLabel_20.TextXAlignment = Enum.TextXAlignment.Left
+
+otesp.Name = "otesp"
+otesp.Parent = main
+otesp.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+otesp.BorderColor3 = Color3.fromRGB(33, 33, 33)
+otesp.Position = UDim2.new(0.051376164, 0, 0.770014584, 0)
+otesp.Size = UDim2.new(0, 200, 0, 46)
+otesp.Font = Enum.Font.GothamSemibold
+otesp.Text = "Observation Tower"
+otesp.TextColor3 = Color3.fromRGB(255, 255, 255)
+otesp.TextSize = 20.000
+otesp.TextWrapped = true
+
+TextLabel_21.Parent = otesp
+TextLabel_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_21.BackgroundTransparency = 1.000
+TextLabel_21.Position = UDim2.new(0.0299999993, 0, 0.978946209, 0)
+TextLabel_21.Size = UDim2.new(0, 83, 0, 29)
+TextLabel_21.Font = Enum.Font.GothamSemibold
+TextLabel_21.Text = "Orange"
+TextLabel_21.TextColor3 = Color3.fromRGB(255, 166, 41)
+TextLabel_21.TextSize = 14.000
+TextLabel_21.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_22.Parent = otesp
+TextLabel_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_22.BackgroundTransparency = 1.000
+TextLabel_22.Position = UDim2.new(0.289999992, 0, 0.978946209, 0)
+TextLabel_22.Size = UDim2.new(0, 83, 0, 29)
+TextLabel_22.Font = Enum.Font.GothamSemibold
+TextLabel_22.Text = "Indicator"
+TextLabel_22.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_22.TextSize = 14.000
+TextLabel_22.TextXAlignment = Enum.TextXAlignment.Left
+
+sesp.Name = "sesp"
+sesp.Parent = main
+sesp.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+sesp.BorderColor3 = Color3.fromRGB(33, 33, 33)
+sesp.Position = UDim2.new(0.051376164, 0, 0.887918532, 0)
+sesp.Size = UDim2.new(0, 200, 0, 46)
+sesp.Font = Enum.Font.GothamSemibold
+sesp.Text = "Shop"
+sesp.TextColor3 = Color3.fromRGB(255, 255, 255)
+sesp.TextSize = 20.000
+sesp.TextWrapped = true
+
+TextLabel_23.Parent = sesp
+TextLabel_23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_23.BackgroundTransparency = 1.000
+TextLabel_23.Position = UDim2.new(0.0299999993, 0, 0.978946209, 0)
+TextLabel_23.Size = UDim2.new(0, 83, 0, 29)
+TextLabel_23.Font = Enum.Font.GothamSemibold
+TextLabel_23.Text = "Grey"
+TextLabel_23.TextColor3 = Color3.fromRGB(170, 170, 170)
+TextLabel_23.TextSize = 14.000
+TextLabel_23.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_24.Parent = sesp
+TextLabel_24.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_24.BackgroundTransparency = 1.000
+TextLabel_24.Position = UDim2.new(0.199999988, 0, 0.978946209, 0)
+TextLabel_24.Size = UDim2.new(0, 83, 0, 29)
+TextLabel_24.Font = Enum.Font.GothamSemibold
+TextLabel_24.Text = "Indicator"
+TextLabel_24.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_24.TextSize = 14.000
+TextLabel_24.TextXAlignment = Enum.TextXAlignment.Left
+
+credit.Name = "credit"
+credit.Parent = main
+credit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+credit.BackgroundTransparency = 1.000
+credit.Position = UDim2.new(0.675229371, 0, 0.952745259, 0)
+credit.Size = UDim2.new(0, 165, 0, 29)
+credit.Font = Enum.Font.GothamSemibold
+credit.Text = "@crime on"
+credit.TextColor3 = Color3.fromRGB(255, 255, 255)
+credit.TextSize = 14.000
+credit.TextXAlignment = Enum.TextXAlignment.Left
+
+credit2.Name = "credit2"
+credit2.Parent = credit
+credit2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+credit2.BackgroundTransparency = 1.000
+credit2.Position = UDim2.new(0.444926351, 0, 0.0217107423, 0)
+credit2.Size = UDim2.new(0, 165, 0, 29)
+credit2.Font = Enum.Font.GothamSemibold
+credit2.Text = "v3rmillion.net"
+credit2.TextColor3 = Color3.fromRGB(255, 0, 0)
+credit2.TextSize = 14.000
+credit2.TextXAlignment = Enum.TextXAlignment.Left
+
+tip.Name = "tip"
+tip.Parent = main
+tip.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+tip.BackgroundTransparency = 1.000
+tip.Position = UDim2.new(0.67706424, 0, 0.923633158, 0)
+tip.Size = UDim2.new(0, 165, 0, 29)
+tip.Font = Enum.Font.GothamSemibold
+tip.Text = "Del to open/close menu"
+tip.TextColor3 = Color3.fromRGB(255, 255, 255)
+tip.TextSize = 14.000
+tip.TextXAlignment = Enum.TextXAlignment.Left
+
+-- Scripts:
+
+local function ZJKJCDQ_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Visible = false
+	end)
+	
+	game:GetService("UserInputService").InputBegan:connect(function(i,p) 
+		if i.KeyCode == Enum.KeyCode.Delete then
+			if script.Parent.Parent.Parent.Visible == false then
+				script.Parent.Parent.Parent.Visible = true
+			elseif script.Parent.Parent.Parent.Visible == true then
+				script.Parent.Parent.Parent.Visible = false
+			end
+		end
+	end)
+end
+coroutine.wrap(ZJKJCDQ_fake_script)()
+local function JGUBLRK_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	--// Bring Scrap
+	
+	local Player = game:GetService("Players").LocalPlayer
+	local scrapFolder = game:GetService("Workspace").Filter.ScrapSpawns
+	
+	function bringScrap()
+		for i,v in pairs(scrapFolder:GetDescendants()) do
+			if v and v:IsA("Model") then
+				if v.Scrap then
+					v.Scrap.CFrame = Player.Character.HumanoidRootPart.CFrame
+				end
+			end
+		end
+	end
+	
+	script.Parent.bringscrap.TextButton.MouseButton1Click:Connect(function()
+		bringScrap()
+	end)
+	
+	game:GetService("UserInputService").InputBegan:connect(function(i,p) 
+		if i.KeyCode == Enum.KeyCode.K then 
+			bringScrap()
+		end
+	end)
+end
+coroutine.wrap(JGUBLRK_fake_script)()
+local function BXIFN_fake_script() -- counter.LocalScript 
+	local script = Instance.new('LocalScript', counter)
+
+	--// Search for Scrap
+	
+	local scrapFolder = game:GetService("Workspace").Filter.ScrapSpawns
+	_G.ScrapCounter = true
+	local scrapTable = {}
+	while _G.ScrapCounter == true do
+		for i,v in pairs(scrapFolder:GetDescendants()) do
+			if v and v:IsA("Model") then
+				table.insert(scrapTable,v)
+				script.Parent.Text = #scrapTable
+			end
+		end
+		task.wait()
+	end
+end
+coroutine.wrap(BXIFN_fake_script)()
+local function HSCJQH_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	--// Bring Flare Gun
+	
+	local Player = game:GetService("Players").LocalPlayer
+	function bringFlare()
+		if game:GetService("Workspace"):FindFirstChild("FlareGunPickUp") then
+			game:GetService("Workspace").FlareGunPickUp.FlareGun.CFrame = Player.Character.HumanoidRootPart.CFrame
+		end
+	end
+	
+	script.Parent.bringscrap.TextButton.MouseButton1Click:Connect(function()
+		bringFlare()
+	end)
+	
+	game:GetService("UserInputService").InputBegan:connect(function(i,p) 
+		if i.KeyCode == Enum.KeyCode.P then 
+			bringFlare()
+		end
+	end)
+end
+coroutine.wrap(HSCJQH_fake_script)()
+local function GWBK_fake_script() -- counter_2.LocalScript 
+	local script = Instance.new('LocalScript', counter_2)
+
+	--// Search for Flare Gun
+	_G.FlareCount = true
+	while _G.FlareCount == true do
+		if game:GetService("Workspace"):FindFirstChild("FlareGunPickUp") then
+			script.Parent.Text = "1"
+		else
+			script.Parent.Text = "0"
+		end
+		task.wait()
+	end
+end
+coroutine.wrap(GWBK_fake_script)()
+local function TJRYSA_fake_script() -- TextButton_5.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_5)
+
+	--// Fullbright
+	
+	local lightingFolder = game:GetService("ReplicatedStorage").CurrentLightingProperties
+	function fullbright()
+		lightingFolder.FogEnd.Value = 500
+		lightingFolder.Brightness.Value = 2
+		lightingFolder.ClockTime.Value = 12
+	end
+	
+	script.Parent.bringscrap.TextButton.MouseButton1Click:Connect(function()
+		fullbright()
+	end)
+	
+	game:GetService("UserInputService").InputBegan:connect(function(i,p) 
+		if i.KeyCode == Enum.KeyCode.J then 
+			fullbright()
+		end
+	end)
+end
+coroutine.wrap(TJRYSA_fake_script)()
+local function LAWHPUL_fake_script() -- TextButton_6.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_6)
+
+	--// Open/Close Safehouse Door
+	
+	function door()
+		workspace.Map.SafeHouse.Door.RemoteEvent:FireServer("Door")
+	end
+	
+	script.Parent.bringscrap.TextButton.MouseButton1Click:Connect(function()
+		door()
+	end)
+	
+	game:GetService("UserInputService").InputBegan:connect(function(i,p) 
+		if i.KeyCode == Enum.KeyCode.H then 
+			door()
+		end
+	end)
+end
+coroutine.wrap(LAWHPUL_fake_script)()
+local function BSHYRST_fake_script() -- resp.LocalScript 
+	local script = Instance.new('LocalScript', resp)
+
+	--// Rake ESP
+	
+	function rakeEsp()
+		local Rake = game:GetService("Workspace").Rake
+		if Rake.AttackHitbox:FindFirstChild("RAKEESP") then
+			print("R already loaded")
+		else
+			local R = Instance.new("BoxHandleAdornment")
+			R.Name = "RAKEESP"
+			R.Parent = Rake.AttackHitbox
+			R.Adornee = Rake.AttackHitbox
+			R.AlwaysOnTop = true
+			R.ZIndex = 1
+			R.Size = Rake.AttackHitbox.Size
+			R.Transparency = 0.3
+			R.Color = BrickColor.new("Really red")
+			print("RESP loaded")
+		end
+	end
+	
+	script.Parent.bringscrap.TextButton.MouseButton1Click:Connect(function()
+		rakeEsp()
+	end)
+end
+coroutine.wrap(BSHYRST_fake_script)()
+local function OBGFGIN_fake_script() -- cesp.LocalScript 
+	local script = Instance.new('LocalScript', cesp)
+
+	--/Crate
+	
+	local crateFolder = game:GetService("Workspace").Debris.SupplyCrates
+	function crateEsp()
+		if crateFolder:FindFirstChild("Box") then
+			if crateFolder.Box:FindFirstChild("CRATEESP") then
+				print("CESP already loaded")
+			else
+				local C = Instance.new("BoxHandleAdornment")
+				C.Name = "CRATEESP"
+				C.Parent = crateFolder.Box.MainHitBox
+				C.Adornee = crateFolder.Box.MainHitBox
+				C.AlwaysOnTop = true
+				C.ZIndex = 0
+				C.Size = crateFolder.Box.MainHitBox.Size
+				C.Transparency = 0.3
+				C.Color = BrickColor.new("Red")
+				print("CESP loaded")
+			end
+		end
+	end
+end
+coroutine.wrap(OBGFGIN_fake_script)()
+local function LGODC_fake_script() -- besp.LocalScript 
+	local script = Instance.new('LocalScript', besp)
+
+	--/BaseCamp
+	
+	local locationFolder = game:GetService("Workspace").Filter.LocationPoints
+	function baseEsp()
+		if locationFolder.BaseCampMSG:FindFirstChild("BASECAMPESP") then
+			print("BC already loaded")
+		else
+			local BC = Instance.new("BoxHandleAdornment")
+			BC.Name = "BASECAMPESP"
+			BC.Parent = locationFolder.BaseCampMSG
+			BC.Adornee = locationFolder.BaseCampMSG
+			BC.AlwaysOnTop = true
+			BC.ZIndex = 0
+			BC.Size = locationFolder.BaseCampMSG.Size
+			BC.Transparency = 0.3
+			BC.Color = BrickColor.new("Red")
+			print("BCESP loaded")
+		end
+	end
+	
+	script.Parent.bringscrap.TextButton.MouseButton1Click:Connect(function()
+		baseEsp()
+	end)
+	
+end
+coroutine.wrap(LGODC_fake_script)()
+local function WLMBP_fake_script() -- shesp.LocalScript 
+	local script = Instance.new('LocalScript', shesp)
+
+	--/Safehouse
+	
+	local locationFolder = game:GetService("Workspace").Filter.LocationPoints
+	function safeEsp()
+		if locationFolder.SafehouseMSG:FindFirstChild("SAFEHOUSEESP") then
+			print("SH already loaded")
+		else
+			local SH = Instance.new("BoxHandleAdornment")
+			SH.Name = "SAFEHOUSEESP"
+			SH.Parent = locationFolder.SafehouseMSG
+			SH.Adornee = locationFolder.SafehouseMSG
+			SH.AlwaysOnTop = true
+			SH.ZIndex = 0
+			SH.Size = locationFolder.SafehouseMSG.Size
+			SH.Transparency = 0.3
+			SH.Color = BrickColor.new("Lime Green")
+			print("SHESP loaded")
+		end
+	end
+	
+	script.Parent.bringscrap.TextButton.MouseButton1Click:Connect(function()
+		safeEsp()
+	end)
+	
+end
+coroutine.wrap(WLMBP_fake_script)()
+local function AFHMYWS_fake_script() -- psesp.LocalScript 
+	local script = Instance.new('LocalScript', psesp)
+
+	--/Powerstation
+	
+	local locationFolder = game:GetService("Workspace").Filter.LocationPoints
+	function powerEsp()
+		if locationFolder.StationMSG:FindFirstChild("POWERSTATIONESP") then
+			print("PS already loaded")
+		else
+			local PS = Instance.new("BoxHandleAdornment")
+			PS.Name = "POWERSTATIONESP"
+			PS.Parent = locationFolder.StationMSG
+			PS.Adornee = locationFolder.StationMSG
+			PS.AlwaysOnTop = true
+			PS.ZIndex = 0
+			PS.Size = locationFolder.ObservationTowerMSG.Size
+			PS.Transparency = 0.3
+			PS.Color = BrickColor.new("Toothpaste")
+			print("PSESP loaded")
+		end
+	end
+	
+	script.Parent.bringscrap.TextButton.MouseButton1Click:Connect(function()
+		powerEsp()
+	end)
+end
+coroutine.wrap(AFHMYWS_fake_script)()
+local function IMQZHGY_fake_script() -- otesp.LocalScript 
+	local script = Instance.new('LocalScript', otesp)
+
+	--/Observation Tower
+	
+	local locationFolder = game:GetService("Workspace").Filter.LocationPoints
+	function towerEsp()
+		if locationFolder.ObservationTowerMSG:FindFirstChild("OBSERVATIONTOWERESP") then
+			print("OT already loaded")
+		else
+			local OT = Instance.new("BoxHandleAdornment")
+			OT.Name = "OBSERVATIONTOWERESP"
+			OT.Parent = locationFolder.ObservationTowerMSG
+			OT.Adornee = locationFolder.ObservationTowerMSG
+			OT.AlwaysOnTop = true
+			OT.ZIndex = 0
+			OT.Size = locationFolder.ObservationTowerMSG.Size
+			OT.Transparency = 0.3
+			OT.Color = BrickColor.new("Grey")
+			print("OTESP loaded")
+		end
+	end
+	
+	script.Parent.bringscrap.TextButton.MouseButton1Click:Connect(function()
+		towerEsp()
+	end)
+end
+coroutine.wrap(IMQZHGY_fake_script)()
+local function ZVGOGZ_fake_script() -- sesp.LocalScript 
+	local script = Instance.new('LocalScript', sesp)
+
+	--/Shop
+	
+	local locationFolder = game:GetService("Workspace").Filter.LocationPoints
+	function shopEsp()
+		if locationFolder.ShopMSG:FindFirstChild("SHOPESP") then
+			print("S already loaded")
+		else
+			local S = Instance.new("BoxHandleAdornment")
+			S.Name = "SHOPESP"
+			S.Parent = locationFolder.ShopMSG
+			S.Adornee = locationFolder.ShopMSG
+			S.AlwaysOnTop = true
+			S.ZIndex = 0
+			S.Size = locationFolder.ObservationTowerMSG.Size
+			S.Transparency = 0.3
+			S.Color = BrickColor.new("Grey")
+			print("SESP loaded")
+		end
+	end
+	
+	script.Parent.bringscrap.TextButton.MouseButton1Click:Connect(function()
+		shopEsp()
+	end)
+	
+end
+coroutine.wrap(ZVGOGZ_fake_script)()
